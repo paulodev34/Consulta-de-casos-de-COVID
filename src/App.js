@@ -1,38 +1,32 @@
-import React, { useState } from "react";
+import React from "react";
+import SelectEstados from "./components/SelectEstado";
 
 import "./App.css";
+import SelectPais from "./components/SelectPais";
 
 const App = () => {
-  const [estado, pais] = useState("1");
-
   return (
     <div className="container">
       <div className="select-estado">
-        <label>Estado </label>
+        <label htmlFor="estado">Estado: </label>
         <br />
-        <select name="estado" value={estado}>
-          <option value="">selecione</option>
-          <option value="state">sp</option>
-        </select>
+        <SelectEstados />
         <br />
 
         <div className="select-pais">
-          <label>Pais </label>
+          <label htmlFor="pais">Pais: </label>
           <br />
-          <select name="pais" value={pais}>
-            <option value="">pais</option>
-            <option value="uf">Brasil</option>
-          </select>
+          <SelectPais />
         </div>
 
         <div className="formcontrol">
-          <label>Data de Nascimento</label>
+          <label>Data</label>
           <br />
           <input type="date" id="data" data-rules="required" />
           <br />
         </div>
       </div>
-      <button className="consulta" type="submit">
+      <button className="consulta" type="submit" onClick="data">
         Consulta
       </button>
     </div>
