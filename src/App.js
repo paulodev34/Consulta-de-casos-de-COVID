@@ -1,8 +1,7 @@
-import React from "react";
-import SelectEstados from "./components/SelectEstado";
+import SelectEstados from "./components/SelectEstados";
+import SelectPais from "./components/SelectPais";
 
 import "./App.css";
-import SelectPais from "./components/SelectPais";
 
 const App = () => {
   return (
@@ -26,7 +25,7 @@ const App = () => {
           <br />
         </div>
       </div>
-      <button className="consulta" type="submit" onClick="data">
+      <button className="consulta" type="submit">
         Consulta
       </button>
     </div>
