@@ -1,34 +1,27 @@
-import SelectEstados from "./components/SelectEstados";
-import SelectPais from "./components/SelectPais";
-
+import React from "react";
 import "./App.css";
+
+import DadosCOVID from "./components/DadosCOVID";
+import SelectPais from "./components/SelectPais";
+import SelectBrasil from "./components/SelectBrasil";
 
 const App = () => {
   return (
-    <div className="container">
-      <div className="select-estado">
-        <label htmlFor="estado">Estado: </label>
-        <br />
-        <SelectEstados />
-        <br />
-
-        <div className="select-pais">
-          <label htmlFor="pais">Pais: </label>
-          <br />
-          <SelectPais />
-        </div>
-
-        <div className="formcontrol">
-          <label>Data</label>
-          <br />
-          <input type="date" id="data" data-rules="required" />
-          <br />
-        </div>
+    <>
+      <div className="container-covid">
+        <h1>Status COVID</h1>
+        <DadosCOVID />
       </div>
-      <button className="consulta" type="submit">
-        Consulta
-      </button>
-    </div>
+
+      <div className="container-pais">
+        <h3>Status Canada</h3>
+        <SelectPais />
+      </div>
+      <div className="container-brasil">
+        <h3>Status Brasil</h3>
+        <SelectBrasil />
+      </div>
+    </>
   );
 };
 
