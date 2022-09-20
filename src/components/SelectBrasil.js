@@ -2,8 +2,9 @@ import React from "react";
 import { useState } from "react";
 
 const SelectBrasil = () => {
-  const [ufs] = useState([
+  const [countrys] = useState([
     {
+      id: 1,
       country: "Brazil",
       cases: 1001,
       confirmed: 1021,
@@ -15,27 +16,27 @@ const SelectBrasil = () => {
 
   return (
     <div>
-      {ufs.map((uf, index) => (
+      {countrys.map((country) => (
         <span>
-          <p key={index} value={uf.country}>
+          <p key={country.id}>
             <strong>Pais: </strong>
-            {uf.country}
+            {country.country}
           </p>
           <p>
             <strong>Casos Confirmados: </strong>
-            {uf.cases}
+            {country.cases}
           </p>
           <p>
             <strong>Confirmados: </strong>
-            {uf.confirmed}
+            {country.confirmed}
           </p>
           <p>
             <strong>Mortes: </strong>
-            {uf.deaths}
+            {country.deaths}
           </p>
           <p>
             <strong>Recuperados: </strong>
-            {uf.deaths}
+            {country.deaths}
           </p>
         </span>
       ))}

@@ -4,68 +4,127 @@ body {
   margin: 0;
 }
 
-.header {
-  margin: -6rem 0;
-  position: fixed;
-  background-color: rgb(21, 169, 169);
-  width: 100%;
-  height: 7rem;
+.container {
+  margin: 2%;
+  width: 90%;
+  display: grid;
 }
 
-.container-covid h1 {
+.box-1 h1 {
   margin: 0 3rem;
   text-align: center;
 }
 
-.container-covid {
-  margin: 4.9rem 3rem;
+.box-1 {
+  margin: 5%;
   width: 35rem;
-  height: auto;
+  height: 40rem;
+  overflow: scroll;
   background-color: white;
   border-radius: 5px;
-  box-shadow: 5px 5px 3px rgba(224, 223, 223, 0.63);
+  box-shadow: 5px 5px 3px rgba(165, 165, 165, 0.63);
 }
 
-.container-covid table th tbody td tr {
+.box-1 table th tbody td tr {
   border: none;
+  height: 50rem;
 }
 
-.container-pais {
-  margin: -76.7rem 38.5rem 0;
+.box-2 {
+  margin: -44.5rem 44.5rem 0;
   width: 17rem;
   height: 18rem;
   border-radius: 5px;
-  background-color: white;
-  box-shadow: 5px 5px 3px rgba(224, 223, 223, 0.63);
+  background-color: #5c54ed;
+  color: white;
+  box-shadow: 5px 5px 3px rgba(165, 165, 165, 0.63);
 }
 
-.container-pais h3 {
-  margin: -3rem 3rem;
+.box-2 h3 {
+  margin: 0 3rem;
   text-align: center;
 }
 
-.container-pais span {
-  margin: 4.8rem 1.3rem;
+.box-2 span {
+  margin: 0.8rem 2.3rem;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 
-.container-brasil {
-  margin: 4rem 38.5rem;
+.box-3 {
+  margin: 3rem 44.5rem;
   width: 17rem;
   height: 18rem;
   border-radius: 5px;
-  background-color: white;
-  box-shadow: 5px 5px 3px rgba(224, 223, 223, 0.63);
+  background-color: #5c54ed;
+  color: white;
+  box-shadow: 5px 5px 3px rgba(165, 165, 165, 0.63);
 }
 
-.container-brasil h3 {
-  margin: -3rem 3rem;
+.box-3 h3 {
+  margin: 0 4rem;
   text-align: center;
 }
 
-.container-brasil span {
-  margin: 4rem 1.3rem;
+.box-3 span {
+  margin: 1rem 2.3rem;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+}
+
+form {
+  width: 14rem;
+  height: 20rem;
+  margin-top: -34rem;
+  margin-left: 72rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+form h2 {
+  margin-top: 45px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border-radius: 5px;
+  border-radius: 1px solid gray;
+  height: 1.8rem;
+  width: 15rem;
+}
+
+button {
+  margin: 1.5rem 0;
+  width: 15rem;
+  height: 2.5rem;
+  background-color: aqua;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form span {
+  color: red;
+  position: absolute;
+  margin-top: 50px;
+}
+
+.box-4 {
+  margin: -22rem 30rem;
+  background-color: rgb(7, 126, 230);
+}
+
+.dates {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, mimax(200px, fr));
+  list-style: none;
+  grid-gap: 1rem;
 }

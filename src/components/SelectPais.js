@@ -1,9 +1,11 @@
 import React from "react";
+
 import { useState } from "react";
 
 const SelectPais = () => {
   const [paises] = useState([
     {
+      id: 1,
       country: "Canada",
       cases: 1299,
       confirmed: 1328,
@@ -16,15 +18,15 @@ const SelectPais = () => {
   return (
     <>
       <div>
-        {paises.map((pais, index) => (
+        {paises.map((pais) => (
           <>
             <span>
-              <p value={pais.country} key={index}>
+              <p value={pais.country} key={pais.id}>
                 <strong>Pais: </strong>
                 {pais.country}
               </p>
               <p>
-                <strong>Casos Confirmados: </strong>
+                <strong>Casos:</strong>
                 {pais.cases}
               </p>
               <p>
@@ -37,7 +39,7 @@ const SelectPais = () => {
               </p>
               <p>
                 <strong>Recuperados: </strong>
-                {pais.deaths}
+                {pais.recovered}
               </p>
             </span>
           </>
